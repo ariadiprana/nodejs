@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
+    "apidoc": "apidoc -i routes/ -o public/apidoc",
     "test": "SET NODE_ENV=test&mocha test/**/*.js"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "passport-jwt": "^2.0.0"
   },
   "devDependencies": {
+    "apidoc": "^0.15.1",
     "babel-register": "^6.5.2",
     "chai": "^3.5.0",
     "mocha": "^2.4.5",

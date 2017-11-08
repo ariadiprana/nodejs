@@ -17,7 +17,7 @@ describe("Routes: Users", () => {
         done();
       });
   });
-  describe("GET /user", () => {
+  describe("GET /users", () => {
     describe("status 200", () => {
       it("returns an authenticated user", done => {
         request.get("/user")
@@ -31,7 +31,7 @@ describe("Routes: Users", () => {
       });
     });
   });
-  describe("DELETE /user", () => {
+  describe("DELETE /users", () => {
     describe("status 204", () => {
       it("deletes an authenticated user", done => {
         request.delete("/user")
