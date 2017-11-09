@@ -10,7 +10,7 @@ module.exports = app => {
   app.db.sequelize.sync().done(() => {
     https.createServer(credentials, app)
       .listen(app.get("port"), () => {
-        console.log(`NTask API - Port ${app.get("port")}`);
+        console.log(`API - Port ${app.get("port")}`);
       });
     });
   }
